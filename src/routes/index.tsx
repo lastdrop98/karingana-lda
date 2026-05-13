@@ -1,26 +1,57 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Stats } from "@/components/site/Stats";
+import { Services } from "@/components/site/Services";
+import { Portfolio } from "@/components/site/Portfolio";
+import { Awards } from "@/components/site/Awards";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Blog } from "@/components/site/Blog";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { ScrollProgress } from "@/components/site/ScrollProgress";
+import { BackToTop } from "@/components/site/BackToTop";
+import { CustomCursor } from "@/components/site/CustomCursor";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Karingana – Agência de Comunicação | Maputo, Moçambique" },
+      {
+        name: "description",
+        content:
+          "Agência de Comunicação líder em Moçambique há mais de 10 anos. Branding, Relações Públicas, Comunicação Corporativa e Estratégia Digital em Maputo.",
+      },
+      { property: "og:title", content: "Karingana – Agência de Comunicação | Maputo, Moçambique" },
+      { property: "og:description", content: "Contamos histórias que deixam marcas. Branding, RP e Estratégia Digital." },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "pt_MZ" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-background text-foreground">
+      <ScrollProgress />
+      <CustomCursor />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Stats />
+        <Services />
+        <Portfolio />
+        <Awards />
+        <Testimonials />
+        <Blog />
+        <Contact />
+      </main>
+      <Footer />
+      <BackToTop />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
