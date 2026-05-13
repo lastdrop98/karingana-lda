@@ -1,16 +1,22 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/karingana-logo.png";
 
 export function Logo({ invert = false }: { invert?: boolean }) {
-  const ink = invert ? "text-white" : "text-ink";
   return (
-    <Link to="/" className="group inline-flex items-center gap-2.5" aria-label="Karingana">
-      <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground font-display text-lg font-extrabold transition-transform duration-300 group-hover:rotate-[-6deg]">
-        K
-        <span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-white" />
-      </span>
-      <span className={`font-display text-xl font-extrabold tracking-tight ${ink}`}>
-        karingana<span className="text-primary">.</span>
-      </span>
+    <Link
+      to="/"
+      className="group inline-flex items-center"
+      aria-label="Karingana — Agência de Comunicação"
+    >
+      <img
+        src={logo}
+        alt="Karingana"
+        width={1920}
+        height={520}
+        className={`h-9 md:h-10 w-auto transition-transform duration-500 group-hover:-rotate-2 group-hover:scale-[1.04] ${
+          invert ? "brightness-0 invert" : ""
+        }`}
+      />
     </Link>
   );
 }
