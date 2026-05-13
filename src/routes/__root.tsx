@@ -72,19 +72,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Karingana - Agência de Comunicação" },
+      { title: "Lovable App" },
       { name: "description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
 informações — é o catalisador que converte interacções 
 efémeras em ecossistemas de confiança e relaci" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Karingana - Agência de Comunicação" },
+      { property: "og:title", content: "Lovable App" },
       { property: "og:description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
 informações — é o catalisador que converte interacções 
 efémeras em ecossistemas de confiança e relaci" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Karingana - Agência de Comunicação" },
+      { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
 informações — é o catalisador que converte interacções 
 efémeras em ecossistemas de confiança e relaci" },
