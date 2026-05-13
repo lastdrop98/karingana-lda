@@ -72,14 +72,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Karingana - Agência de Comunicação" },
+      { name: "description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
+informações — é o catalisador que converte interacções 
+efémeras em ecossistemas de confiança e relaci" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Karingana - Agência de Comunicação" },
+      { property: "og:description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
+informações — é o catalisador que converte interacções 
+efémeras em ecossistemas de confiança e relaci" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Karingana - Agência de Comunicação" },
+      { name: "twitter:description", content: "Para nós, a comunicação transcende o mero intercâmbio de 
+informações — é o catalisador que converte interacções 
+efémeras em ecossistemas de confiança e relaci" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/19838c23-f253-47c4-97c8-9ef807da73d8/id-preview-56e46ddd--b7bee411-c2e7-48eb-a23c-3d566cd7b775.lovable.app-1778662331216.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/19838c23-f253-47c4-97c8-9ef807da73d8/id-preview-56e46ddd--b7bee411-c2e7-48eb-a23c-3d566cd7b775.lovable.app-1778662331216.png" },
     ],
     links: [
       {
